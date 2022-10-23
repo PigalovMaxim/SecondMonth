@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Second Month</title>
+</head>
+<body>
+    <!------------------- BLOCK-1 ------------------->
+    <div class="container text-center mt-3 d-flex flex-column align-items-center">
+        <h1 class="mb-3">Connect to Rest API</h1>
+        <div class="col-6 d-flex flex-column align-items-center">
+            <img src="./no-image.jpg" alt="cat photo" class="cat-image mb-3" id="cat-image">
+            <button id="get-cat-image" class="btn btn-primary">Получить кота</button>
+            <select id="tags-select" class="form-select my-3" aria-label="Default select example">
+                <option selected>Без тегов</option>
+            </select>
+        </div>
+    </div>
+    <div class="row-splash w-100 text-center text-uppercase p-1 my-3">разделительная полоса</div>
+
+    <!------------------- BLOCK-2 ------------------->
+
+    <div class="container queries text-center d-flex flex-column align-items-center">
+        <h1 class="mb-3">Create API docs map</h1>
+        <div class="query col-9 d-flex flex-column">
+            <div class="queryInfo d-flex flex-row">
+                <span class="queryType me-3">GET</span>
+                <span>/users</span>
+            </div>
+            <div class="params mt-2 w-100 text-start">
+                Params
+                <div class="queryParam">
+                    id (optional) - number (example /users?id=5)
+                </div>
+                <div class="queryParam">
+                    name (optional) - string (example /users?name="John")
+                </div>
+            </div>
+            <div class="examples mt-2 w-100 text-start d-flex flex-column">
+                Examples
+                <span><span class="link">https://somesite.ru/users</span> - return JSON with array of all users</span>
+                <span><span class="link">https://somesite.ru/users?id=5</span> - return JSON with user object</span>
+                <span><span class="link">https://somesite.ru/users?name="John"</span> - return JSON with array of all users with name "John"</span>
+            </div>
+        </div>
+        <div class="query col-9 d-flex flex-column mt-5">
+            <div class="queryInfo d-flex flex-row">
+                <span class="queryType me-3">POST</span>
+                <span>/users</span>
+            </div>
+            <div class="params mt-2 w-100 text-start">
+                Params
+                <div class="queryParam">
+                    name (required) - string (example /users?name="John")
+                </div>
+                <div class="queryParam">
+                    lastName (required) - string (example /users?lastName="Smit")
+                </div>
+                <div class="queryParam">
+                    password (required) - string (example /users?password="123")
+                </div>
+            </div>
+            <div class="examples mt-2 w-100 text-start d-flex flex-column">
+                Examples
+                <span><span class="link">https://somesite.ru/users?name="John"&lastName="Smit"&password="123"</span> - return JSON with result of registration (true or false)</span>
+            </div>
+        </div>
+        <div class="query col-9 d-flex flex-column mt-5">
+            <div class="queryInfo d-flex flex-row">
+                <span class="queryType me-3">DELETE</span>
+                <span>/users</span>
+            </div>
+            <div class="params mt-2 w-100 text-start">
+                Params
+                <div class="queryParam">
+                    id (required) - number (example /users?id=1)
+                </div>
+                <div class="queryParam">
+                    password (required) - string (example /users?password="123")
+                </div>
+            </div>
+            <div class="examples mt-2 w-100 text-start d-flex flex-column">
+                Examples
+                <span><span class="link">https://somesite.ru/users?id=1&password="123"</span> - return JSON with result of remove user (true or false)</span>
+            </div>
+        </div>
+    </div>
+    <div class="row-splash w-100 text-center text-uppercase p-1 my-3">разделительная полоса</div>
+
+    <!------------------- BLOCK-3 ------------------->
+
+    <div class="container text-center d-flex flex-column align-items-center">
+        <h1 class="mb-3">Connect to GraphQL API</h1>
+    </div>
+    <div class="row-splash w-100 text-center text-uppercase p-1 my-3">разделительная полоса</div>
+
+    <!------------------- BLOCK-4 ------------------->
+
+    <div class="container text-center d-flex flex-column align-items-center">
+        <h1 class="mb-3">Use Cash</h1>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
