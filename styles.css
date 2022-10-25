@@ -27,3 +27,12 @@ body {
     padding-left: 20px;
     border-top: 1px solid rgb(32, 32, 32);
 }
+.last {
+    padding-bottom: 120px;
+}
+.last .graphQLBLock:first-child {
+    border-top: 1px solid black;
+}
+.graphQLBLock {
+    border-bottom: 1px solid black;
+}
